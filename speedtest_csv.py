@@ -1,3 +1,4 @@
+import logging
 import pprint
 import time
 from datetime import datetime
@@ -73,4 +74,9 @@ class SpeedTestRunner:
 if __name__ == "__main__":
     print("Now collecting speedtest data!")
     grand_rapids_mi = 34750
-    SpeedTestRunner(servers=[grand_rapids_mi]).run_continually()
+    while True:
+        try:
+            SpeedTestRunner(servers=[grand_rapids_mi]).run_continually()
+            break
+        except Exception as err:
+            logging.error("Error! %r\n Restarting...", err)
