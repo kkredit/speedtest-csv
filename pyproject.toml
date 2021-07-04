@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "speedtest_csv"
-version = "0.2.0"
+version = "0.3.0"
 description = "At-home internet speed -> CSV program"
 authors = ["Kevin Kredit"]
 readme = "README.md"
