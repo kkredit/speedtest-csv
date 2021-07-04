@@ -9,4 +9,5 @@ Largely a wrapper script around [speedtest-cli](https://github.com/sivel/speedte
 ```bash
 poetry install
 poetry run pre-commit install
+poetry build
 ```
