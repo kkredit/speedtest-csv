@@ -72,4 +72,5 @@ class SpeedTestRunner:
 
 if __name__ == "__main__":
     print("Now collecting speedtest data!")
-    SpeedTestRunner(servers=[34750]).run_continually()
+    grand_rapids_mi = 34750
+    SpeedTestRunner(servers=[grand_rapids_mi]).run_continually()
